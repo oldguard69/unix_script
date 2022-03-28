@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+mkdir $1
+cd $1
+mkdir v1_0
+touch __init__.py
+cd v1_0
+touch {__init__.py,serializers.py,urls.py,views.py}
