@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
     then
-        python manage.py runserver
+        clear & python manage.py runserver
     else
-        python manage.py runserver $1
+        clear & python manage.py runserver $1
 fi
