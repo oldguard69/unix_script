@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+docker exec -it postgris psql -U postgres

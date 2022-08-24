@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+clear & stripe listen -f localhost:8000/api/common/stripe-connected-webhooks/

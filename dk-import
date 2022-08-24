@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+while getopts f:d: flag
+do
+    case "${flag}" in
+        f) dumped_file=${OPTARG};;
+        d) database=${OPTARG};;
+    esac
+done
+
+cat $dumped_file | docker exec -i postgris psql -U postgres -d $database
