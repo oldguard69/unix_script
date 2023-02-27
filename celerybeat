@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-celery -A $@ beat -l INFO
+celery -A api beat -l INFO

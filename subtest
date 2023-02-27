@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+mkdir $1
+cd $1
+mkdir views
+touch {__init__.py,factories.py}
+cd views
+touch {__init__.py,test_admin_views.py}
